@@ -1,0 +1,87 @@
+@import "fonts.scss";
+@import "normalize.scss";
+
+$white : #E5E5E5 ;
+$blue : #005FA3 ;
+$title: 48px;
+$subtitle: 24px;
+// начало верстки меню
+.menu{
+    height: 110px;
+    background-color: $white;
+}
+.container{
+    width: 1116px;
+    margin: 0 auto;
+}
+.menu__wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu__logo{
+    display:flex;
+    align-items: center;
+    padding-top: 33px;
+}
+.menu__logo-img{
+    padding-right: 30px;
+}
+.menu__logo-text{
+    font-family: 'Merriweather Black';
+    font-size: 36px;
+    color: $blue;
+}
+.menu__nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+.menu__nav-contacts{
+    display: flex;
+    padding-top: 22px;
+}
+.menu__nav-contacts-item{
+    display: flex;
+    align-self: center;
+    padding-right: 40px;
+}
+.menu__nav-contacts-item:last-child{
+    padding-right: 0;
+}
+.menu__nav-contacts-item-text{
+    font-family: 'lato regular';
+    font-size: 13px;
+    color:black;
+    align-self: center;
+}
+.menu__nav-contacts-item-text-inner a{
+    color:black;
+}
+
+.menu__nav-contacts-item-img{
+    padding-right: 15px;
+}
+
+
+.menu__nav-navigation{
+    display: flex;
+    list-style-type: none;
+    margin-top: 22px;
+}
+.menu__nav-navigation-item{
+    font-family: 'lato bold';
+    color: black;
+    font-size: 14px;
+    margin-right: 68px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+}
+.menu__nav-navigation-item:last-child{
+    margin-right: 0px;
+}
+.menu__nav-navigation-item-link{
+    color: black;
+}
+// конец верстки меню

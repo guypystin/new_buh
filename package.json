@@ -1,0 +1,16 @@
+{
+  "name": "theater-spb_sass_auto-update",
+  "version": "1.0.0",
+  "description": "первая галп сборка для верстки",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Trippie_a",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
