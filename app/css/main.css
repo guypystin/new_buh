@@ -263,3 +263,141 @@ h1, h2, h3, h4, h5, h6 {
   height: 10px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 5px; }
+
+.two {
+  display: flex;
+  flex-direction: row;
+  background-color: #ebebeb; }
+
+.subtitle {
+  font-family: 'Lato Black';
+  font-size: 24px;
+  color: #BDBDBD;
+  line-height: 33px;
+  width: 445px; }
+
+.two__services {
+  margin-top: 140px; }
+
+.title {
+  font-family: 'Merriweather Black';
+  font-size: 48px;
+  color: black;
+  line-height: 69px;
+  width: 663px; }
+
+.two__spec {
+  margin-top: 40px; }
+
+.two__items {
+  margin-top: 102px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 110px; }
+
+.two__item {
+  display: flex;
+  margin-bottom: 30px;
+  width: 350px;
+  height: 360px;
+  position: relative;
+  background: url("../img/two-item.png");
+  transition: 0.7s; }
+
+.two__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all .3s ease; }
+
+.two__item:hover::before {
+  background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65)); }
+
+.two__item-text {
+  position: absolute;
+  font-family: 'Lato Black';
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+  left: 45px;
+  bottom: 45px;
+  width: 54px;
+  z-index: 10; }
+
+.three__container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 140px;
+  justify-content: space-between; }
+
+.three__left {
+  display: flex;
+  flex-direction: column; }
+
+.three__company {
+  margin-top: 40px;
+  width: 347px; }
+
+.three__company-blue {
+  color: #005FA3; }
+
+.three__text {
+  width: 445px;
+  font-family: "Lato Light";
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 60px; }
+
+.three__right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 540px;
+  justify-content: space-between; }
+
+.three__right-item {
+  width: 255px;
+  height: 255px;
+  background-color: #BDBDBD;
+  margin-bottom: 30px;
+  background-color: #EBEBEB; }
+
+.three__item {
+  position: relative;
+  transition: 0.5s; }
+
+.three__item:hover {
+  background-color: #005FA3; }
+
+.three__item-big {
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  font-family: "Lato Black";
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.three__item-min {
+  position: absolute;
+  font-family: "Lato Bold";
+  font-size: 14px;
+  line-height: 18px;
+  top: 114px;
+  left: 40px; }
+
+.three__item-link {
+  position: absolute;
+  top: 198px;
+  left: 40px;
+  font-family: "Lato Bold";
+  text-decoration-line: underline;
+  color: #005FA3;
+  line-height: 17px; }
