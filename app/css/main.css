@@ -202,11 +202,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Слайдер запущен */
 /* Слайдер с точками */
 /* Ограничивающая оболочка */
-.slick-list {
+.first__slider .slick-list {
   overflow: hidden; }
 
 /* Лента слайдов */
-.slick-track {
+.first__slider .slick-track {
   display: flex; }
 
 /* Слайд */
@@ -372,8 +372,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   transition: 0.5s; }
 
+.three__item:hover a {
+  color: white; }
+
 .three__item:hover {
-  background-color: #005FA3; }
+  background-color: #005FA3;
+  color: white; }
 
 .three__item-big {
   position: absolute;
@@ -401,3 +405,92 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration-line: underline;
   color: #005FA3;
   line-height: 17px; }
+
+.four {
+  background-color: #EBEBEB;
+  min-height: 670px; }
+
+.four__clients {
+  padding-top: 100px; }
+
+.four__works {
+  margin-top: 40px; }
+
+.four__slider {
+  margin-top: 80px; }
+
+/* Слайдер */
+.four__slider .slick-slider {
+  position: relative; }
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+  position: relative; }
+
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  position: relative;
+  overflow: hidden; }
+
+/* Лента слайдов */
+.four__slider .slick-track {
+  display: flex; }
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.four__slider .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  bottom: 113px;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-color: rgba(184, 133, 133, 0.5);
+  top: 180px; }
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  right: 0;
+  background: url(../img/first-slider-prev.svg) no-repeat center;
+  background-color: rgba(0, 95, 163, 0.3);
+  transition: 0.2s; }
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: -60px;
+  background: url(../img/first-slider-next.svg) no-repeat center;
+  background-color: rgba(0, 95, 163, 0.3);
+  transition: 0.2s; }
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+.four__slider .slick-dots {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  margin-top: 100px; }
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #005fa3;
+  width: 10px;
+  height: 10px; }
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 95, 163, 0.4); }
+
+.four__slider .slick-arrow.slick-prev:hover {
+  background-color: #005fa3; }
+
+.four__slider .slick-arrow.slick-next:hover {
+  background-color: #005fa3; }

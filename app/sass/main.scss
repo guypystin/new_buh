@@ -126,17 +126,17 @@ $subtitle: 24px;
 
 //
 /* Слайдер */
-.slick-slider{}
+.first__slider .slick-slider{}
 /* Слайдер запущен */
-.slick-slider.slick-initialized{}
+.first__slider .slick-slider.slick-initialized{}
 /* Слайдер с точками */
-.slick-slider.slick-dotted{}
+.first__slider .slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
-.slick-list {
+.first__slider .slick-list {
     overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track{
+.first__slider .slick-track{
     display: flex;
 }
 /* Слайд */
@@ -335,8 +335,12 @@ $subtitle: 24px;
     position: relative;
     transition: 0.5s;
 }
+.three__item:hover a{
+    color: white;
+}
 .three__item:hover {
     background-color: $blue;
+    color:white;
 }
 .three__item-big {
     position: absolute;
@@ -363,8 +367,119 @@ $subtitle: 24px;
     left: 40px;
     font-family: "Lato Bold";
     text-decoration-line: underline;
-    color: $blue;
+    color: #005FA3;
     line-height: 17px;
 }
+//Конец верстки третьей страницы
 
-//конец верстки третьей страницы
+//Начало верстки четвертой страницы
+
+.four{
+    background-color: #EBEBEB;
+    min-height: 670px;
+}
+.four__clients{
+    padding-top: 100px;
+}
+.four__works{
+    margin-top: 40px;
+}
+.four__slider{
+    margin-top: 80px;
+}
+
+
+//Верстка слайдера с 4 страницы
+
+/* Слайдер */
+.four__slider .slick-slider{
+    position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{
+    position: relative;
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    position: relative;
+    overflow: hidden;
+}
+/* Лента слайдов */
+.four__slider .slick-track{
+    display: flex;
+    
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.four__slider .slick-arrow{
+    position: absolute;
+    z-index: 10;
+    bottom: 113px;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    background-color: rgba(184, 133, 133, 0.5);
+    top:180px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    right: 0;
+    background: url(../img/first-slider-prev.svg) no-repeat center;
+    background-color: rgba(0,95,163,0.3);
+    transition: 0.2s;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: -60px;
+    background: url(../img/first-slider-next.svg) no-repeat center;
+    background-color: rgba(0,95,163,0.3);
+    transition: 0.2s;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.four__slider .slick-dots{
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.slick-dots li{
+    
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background-color: rgba(0,95,163,1);
+    width: 10px;
+    height: 10px;
+    
+}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(0,95,163,0.4);
+    
+}
+.four__slider .slick-arrow.slick-prev:hover{
+    background-color: rgba(0,95,163,1);
+}
+.four__slider .slick-arrow.slick-next:hover{
+    background-color: rgba(0,95,163,1);
+}
+//Конец верстки слайдера с 4 страницы
+
+//Конец верстки четвертой страницы
